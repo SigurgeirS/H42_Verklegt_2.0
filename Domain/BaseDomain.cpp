@@ -19,16 +19,3 @@ vector<Base> BaseDomain::getBase(){
 	}
 	return bases;
 }
-
-int main(){
-	BaseRepository repo;
-	BaseDomain dom;
-	vector<Base> bases;
-	Base base;
-	cin>>base;
-	dom.addBase(base);
-	bases = dom.getBase();
-	cout<<bases[0]<<endl;
-
-	return 0;
-}
