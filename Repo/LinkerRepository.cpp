@@ -4,6 +4,10 @@ LinkerRepository::LinkerRepository(){
 	//constructor
 }
 
+void LinkerRepository::setFileName(const string& file){
+	fileName = file;
+}
+
 void LinkerRepository::storeLinker(const Linker& link){
 	ofstream fout;
 	fout.open("Linkerlist.txt", ios::app);
