@@ -9,7 +9,7 @@ class BaseRepository {
 	private:
 
 	public:
-		baseRepository();
+		BaseRepository();
 		void fileBase(const Base& base);
 		vector<Base> fetchBases();
 
