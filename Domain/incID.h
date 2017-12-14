@@ -7,15 +7,15 @@
 
 #include"../Model/order.h"
 
-class incID{
+class IncID{
 	private:
 
 	public:
-		incID();
+		IncID();
 		//sets id records to zero
 		void resetOrderID();
 		//Sets ID to latest ID + one
-		void orderID(order& newOrder);
+		void orderID(Order& newOrder);
 };
 
 #endif

@@ -8,15 +8,15 @@
 #include"../Model/Linker.h"
 #include <iostream>
 
-class orderDomain{
+class OrderDomain{
 	private:
 		OrderRepository orderRepo;
 		LinkerRepository LinkRepo;
 
 	public:
-		orderDomain();
-		void addOrder(const order& newOrder);
-		void getOrderList(const vector<order>& orderlist);
+		OrderDomain();
+		void addOrder(const Order& newOrder);
+		void getOrderList(const vector<Order>& orderlist);
 		void sidesLinker(Linker& link, const order& ord, const Sides& side);
 
 

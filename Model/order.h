@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class order{
+class Order{
 	private:
 		int ID;
 		string name;
@@ -16,7 +16,7 @@ class order{
 		
 	public:
 		bool verbose;
-		order();
+		Order();
 		int getID();
 		string getName();
 		string getDelivery();
@@ -24,8 +24,8 @@ class order{
 		double getPrice();
 		void setID(string ID);
 		
-		friend istream& operator >> (istream& in, order& order);
-		friend ostream& operator << (ostream& out, const order& order);
+		friend istream& operator >> (istream& in, Order& order);
+		friend ostream& operator << (ostream& out, const Order& order);
 };
 
 

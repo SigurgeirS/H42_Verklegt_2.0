@@ -5,13 +5,13 @@ This class holds our Topping (in this case we just expect that we only choice on
 */
 Topping::Topping()
 {
-    this->ID = "";
+    this->ID = 0;
     this->name = "";
     this->price = 0;
     this->verbose = true;
 }
 
-string Topping::get_id()
+int Topping::get_id()
 {
     return ID;
 }

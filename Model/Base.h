@@ -16,7 +16,7 @@ class Base
     protected:
 
     private:
-        string ID;
+        int ID;
         double price;
         string name;
 };

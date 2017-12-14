@@ -10,14 +10,14 @@ public:
     Pizza_menu();
     friend istream& operator >> (istream& in, Pizza_menu& pizza_menu);
     friend ostream& operator << (ostream& out,const Pizza_menu& pizza_menu);
-    string get_id();
+    int get_id();
     void startUI();
     virtual ~Pizza_menu();
 
 protected:
 
 private:
-    string ID;
+    int ID;
     string name;
 };
 

@@ -5,7 +5,7 @@ using namespace std;
 
 Pizza_menu::Pizza_menu()
 {
-    this->ID = "";
+    this->ID = 0;
     this->name = "";
 }
 
@@ -14,7 +14,7 @@ Pizza_menu::~Pizza_menu()
     //dtor
 }
 
-string Pizza_menu::get_id()
+int Pizza_menu::get_id()
 {
     return ID;
 }

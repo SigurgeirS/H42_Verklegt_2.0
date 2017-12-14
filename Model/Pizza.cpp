@@ -5,7 +5,7 @@ Pizza::Pizza()
 	verbose = true;
 }
 
-string Pizza::getID(){
+int Pizza::getID(){
 	return ID;
 }
 

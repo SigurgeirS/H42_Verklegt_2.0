@@ -4,7 +4,7 @@ Soda::soda(){
 	verbose = true;
 }
 
-string Soda::getID(){
+int Soda::getID(){
 	return ID;
 }
 

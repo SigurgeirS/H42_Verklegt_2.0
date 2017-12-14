@@ -1,10 +1,10 @@
 #include "incID.h"
 
-incID::incID(){
+IncID::IncID(){
 	//constructor
 }
 
-void incID::resetOrderID(){
+void IncID::resetOrderID(){
 
 	ofstream fout;
 	string zero = "0";
@@ -23,7 +23,7 @@ void incID::resetOrderID(){
 	};
 }
 
-void incID::orderID(order& newOrder){
+void IncID::orderID(order& newOrder){
 
 	ofstream fout;
 	ifstream fin;

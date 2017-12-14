@@ -5,7 +5,7 @@ Pizza_size::Pizza_size()
 	verbose = true;
 }
 
-string Pizza_size::getID(){
+int Pizza_size::getID(){
 	return ID;
 }
 

@@ -7,7 +7,7 @@ Base::Base()
 	verbose = true;
 }
 
-string Base::get_id(){
+int Base::get_id(){
     return ID;
 }
 

@@ -9,12 +9,12 @@ class Pizza_size
 {
     public:
         Pizza_size();
-	string getID();
+	    int getID();
         friend istream& operator >> (istream& in, Pizza_size& pizza_size);
         friend ostream& operator << (ostream& out,const Pizza_size& pizza_size);
 	bool verbose;
     private:
-        string ID;
+        int ID;
         double price;
         string name;
 };

@@ -8,7 +8,7 @@ Location::Location()
     this->verbose = true;
 }
 
-string Location::get_id()
+int Location::get_id()
 {
     return ID;
 }

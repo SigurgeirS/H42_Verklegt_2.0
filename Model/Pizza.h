@@ -7,11 +7,11 @@ using namespace std;
 class Pizza
 {
 	private:
-		string ID;
+		int ID;
 		double price;
 	public:
 		Pizza();
-		string getID();
+        int getID();
     		friend ostream& operator << (ostream& out, const Pizza& pizza);
     		friend istream& operator >> (istream& in, Pizza& pizza);
 		bool verbose;

@@ -7,13 +7,13 @@ using namespace std;
 
 class Soda {
 	private:
-		string ID;
+		int ID;
 		string name;
 		double price;
 	public:
 		bool verbose;
 		soda();
-		string getID();
+		int getID();
 		string getName();
 		double getPrice();
 		

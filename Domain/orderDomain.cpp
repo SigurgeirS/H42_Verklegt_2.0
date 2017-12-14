@@ -1,27 +1,27 @@
 #include "orderDomain.h"
 
-orderDomain::orderDomain(){
+OrderDomain::OrderDomain(){
 	//constructor
 }
 
-void orderDomain::addOrder(const order& newOrder){
-	orderRepo.add(newOrder);
+void OrderDomain::addOrder(const Order& newOrder){
+	OrderRepo.add(newOrder);
 };
 
-void orderDomain::getOrderList(const vector<order>& orderlist){
-	//prints out all orders.
+void OrderDomain::getOrderList(const vector<Order>& Orderlist){
+	//prints out all Orders.
 	cout<<"--------------------"<<endl;
 	int c = 0;
-	order ord;
-	while( c < orderlist.size() ){
+	Order ord;
+	while( c < Orderlist.size() ){
 		cout<<"--------------------"<<endl;
-		cout<<orderlist[c];
+		cout<<Orderlist[c];
 		cout<<"--------------------"<<endl;
 		c++;
 	}
 	cout<<"--------------------"<<endl;
 }
 
-void orderDomain::sidesLinker(Linker& link, const order& ord, const Sides& side){
+void OrderDomain::sidesLinker(Linker& link, const Order& ord, const Sides& side){
 	
 

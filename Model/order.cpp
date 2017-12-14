@@ -1,62 +1,62 @@
 #include "order.h"
 
-order::order(){
+Order::Order(){
 	//constructor
 
 };
 
-int order::getID(){
+int Order::getID(){
 	return ID;
 };
 
-string order::getName(){
+string Order::getName(){
 	return name;
 };
 
-string order::getStatus(){
+string Order::getStatus(){
 	return status;
 };
 
-double order::getPrice(){
+double Order::getPrice(){
 	return price;
 };
 
-void order::setID(string ID){
+void Order::setID(string ID){
 	this -> ID = ID;
 };
 
 
-istream& operator >> (istream& in, order& order){
+istream& operator >> (istream& in, Order& Order){
 
 
-	if(order.verbose){
+	if(Order.verbose){
 		cout<<"ID: ";
 	}
-	in>>order.ID;	
+	in>>Order.ID;	
 	in.ignore();
-	if(order.verbose){
+	if(Order.verbose){
 		cout<<"Name: ";
 	}
-	getline(in, order.name);
-	if(order.verbose){
+	getline(in, Order.name);
+	if(Order.verbose){
 		cout<<"Delivery method: ";
 	}
-	in>>order.delivery;
-	if(order.verbose){
+	in>>Order.delivery;
+	if(Order.verbose){
 		cout<<"Order Status: ";
 	}
-	in>>order.status;
-	if(order.verbose){
-		cout<<"Total cost of order: ";
+	in>>Order.status;
+	if(Order.verbose){
+		cout<<"Total cost of Order: ";
 	}
-	in>>order.price;
-	if(order.verbose){
+	in>>Order.price;
+	if(Order.verbose){
 	}
 	return in;
 };
 
-ostream& operator << (ostream& out, const order& order){
-	out<<order.ID<<endl<<order.name<<endl<<order.delivery<<endl<<order.status<<endl<<order.price<<endl;
+ostream& operator << (ostream& out, const Order& Order){
+	out<<Order.ID<<endl<<Order.name<<endl<<Order.delivery<<endl<<Order.status<<endl<<Order.price<<endl;
 	return out;
 };
 
