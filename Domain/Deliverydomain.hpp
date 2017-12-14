@@ -21,6 +21,6 @@ public:
 	bool paid();
 	bool delivered();
 private:
-}
+};
 
 #endif /* domain_hpp */
