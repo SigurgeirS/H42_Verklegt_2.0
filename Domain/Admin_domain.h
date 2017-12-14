@@ -1,8 +1,9 @@
 #ifndef ADMIN_DOMAIN_H
 #define ADMIN_DOMAIN_H
+#include "../Model/Base.h"
 #include "../Repo/PizzaRepository.h"
 #include "../Repo/Pizza_menuRepository.h"
-#include "../Repo/OtherproductsRepository.h"
+//#include "../Repo/OtherproductsRepository.h"
 #include "../Model/Pizza_menu.h"
 #include "../Model/Location.h"
 #include "../Repo/LocationRepository.h"
@@ -33,15 +34,15 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <iomanip>
-
-
+#include "../Model/Base.cpp"
+#include "../Model/Pizza_size.cpp"
 class Admin_domain
 {
 public:
     Admin_domain();
     ///Recording things
     void record_toppings(Topping& topping);
-    void record_base(Base& base);
+//    void record_base(Base& base);
     void record_size(Pizza_size& pizzasize);
     void record_menu(Pizza_menu& pizzamenu,string line);
     void record_location(Location& location);
@@ -51,9 +52,12 @@ public:
     void check_topping_Name(Topping& topping);
     void check_topping_Price(Topping& topping);
     ///Checking base
+    /*void check_base_name(Base& base);
+    void check_base_price(Base& base);
+    void check_base_count(int counter);*/
+    void check_base_count(int counter);
     void check_base_name(Base& base);
     void check_base_price(Base& base);
-    void check_base_count(int counter);
     ///Checking size
     void check_pizza_size(Pizza_size& pizzasize);
     void check_pizza_size_price(Pizza_size& pizzasize);
