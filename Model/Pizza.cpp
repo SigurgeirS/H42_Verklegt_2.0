@@ -2,7 +2,7 @@
 //REMEMBER VERBOSE IN REPOSITORY.
 Pizza::Pizza()
 {
-	//constructor
+	verbose = true;
 }
 
 string Pizza::getID(){

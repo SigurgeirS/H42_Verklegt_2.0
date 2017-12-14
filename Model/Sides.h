@@ -1,24 +1,24 @@
-#ifndef SODA_H
-#define SODA_H
-
+#ifndef SIDES_H
+#define SIDES_H
 #include<string>
 #include<iostream>
+
 using namespace std;
 
-class Soda {
+class Sides{
 	private:
 		string ID;
 		string name;
 		double price;
 	public:
+		Sides();
 		bool verbose;
-		soda();
 		string getID();
 		string getName();
 		double getPrice();
-		
-		friend ostream& operator << (ostream& out, const Soda& soda);
-		friend istream& operator >> (istream& in, Soda& soda);
+
+		friend ostream& operator << (ostream& out, const Sides& side);
+		friend istream& operator >> (istream& in, Sides& side);
 };
 
 #endif

@@ -15,6 +15,7 @@ using namespace std;
 
 class locationMenu{
 public:
+	void LocationUI();
 	void validateLocation(int input)throw(InvalidLocationException);
 private:
 	
