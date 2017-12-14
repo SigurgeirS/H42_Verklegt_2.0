@@ -15,12 +15,14 @@ using namespace std;
 #include <stdio.h>
 class DeliveryUI {
 public:
-    void SelectLocation()
-	void mainMenu();
-	void validate_input(char input);
-	
+    DeliveryUI();
+    void SelectLocation();
+    void validate_input(char input);
+    void StartUI();
+    
 private:
-	Domain domain;
+    Domain domain;
 };
 
 #endif /* UI_hpp */
+

@@ -1,4 +1,5 @@
 #include "PizzaDomain.h"
+
 const string toppinglinkerfilename = "toppinglinker.txt";
 const string sizelinkerfilename = "sizelinker.txt";
 const string baselinkerfilename = "baselinker.txt";
