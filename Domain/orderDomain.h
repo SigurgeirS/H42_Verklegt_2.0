@@ -29,7 +29,8 @@ class OrderDomain{
 		void sodaLinker(const Order& ord, const Soda& soda);
 		void locationLinker(const Order& ord, const Location& location);
 		void inputSodaLinker(int input, const Order& order);
-
+		void inputSidesLinker(int input, const Order& order);
+		void inputLocationLinker(int input, const Order& order);
 
 };
 

@@ -44,22 +44,47 @@ void OrderDomain::locationLinker(const Order& ord, const Location& location){
 }
 
 void OrderDomain::inputSodaLinker(int input, const Order& order){
-	Linker link;
-	cout<<"GERIST THETTA?!"<<endl;
 	vector<Soda> sodas;
 	sodas = SodaDom.getSoda();
 
 	int c = 0;
 	int test;
-	cout<<sodas.size()<<endl;
 	while(c < sodas.size()){
 		test = sodas[c].getID();
-		cout<<test<<endl;
-		cout<<"GERIST THETTA?!"<<endl;
 		if(test == input){
 			sodaLinker(order, sodas[c]);
-			cout<<sodas[c]<<endl;
 		}
 		c++;
 	}
 }
+
+void OrderDomain::inputSidesLinker(int input, const Order& order){
+	vector<Sides> sidelist;
+	sidelist = SidesDom.getSides();
+
+	int c = 0;
+	int test;
+	while(c < sidelist.size()){
+		test = sidelist[c].getID();
+		if(test == input){
+			sidesLinker(order, sidelist[c]);
+		}
+		c++;
+	}
+}
+
+void OrderDomain::inputLocationLinker(int input, const Order& order){
+	vector<Location> locations;
+	locations = LocationDom.getLocation();
+
+	int c = 0;
+	int test;
+	while(c < locations.size()){
+		test = locations[c].getID();
+		if(test == input){
+			locationLinker(order, locations[c]);
+		}
+		c++;
+	}
+}
+

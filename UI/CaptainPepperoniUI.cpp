@@ -6,7 +6,7 @@
 //  Copyright © 2017 Halldór Alvar Kjartansson. All rights reserved.
 //
 
-#include "CaptainPepperoniUI.hpp"
+#include "CaptainPepperoniUI.h"
 
 void Captain::startCaptainPepo(){
     cout <<MAGENTA<<" ██████╗ █████╗ ██████╗ ████████╗ █████╗ ██╗███╗   ██╗" << endl;
@@ -22,4 +22,10 @@ void Captain::startCaptainPepo(){
     cout <<CYAN<< "██╔═══╝ ██╔══╝  ██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗██║   ██║██║╚██╗██║██║" << endl;
     cout <<CYAN<< "██║     ███████╗██║     ██║     ███████╗██║  ██║╚██████╔╝██║ ╚████║██║" << endl;
     cout <<CYAN<< "╚═╝     ╚══════╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝" << endl;
+}
+
+int main(){
+	Captain cap;
+	cap.startCaptainPepo();
+	return 0;
 }
