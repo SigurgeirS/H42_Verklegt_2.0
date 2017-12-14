@@ -22,3 +22,6 @@ void orderDomain::getOrderList(const vector<order>& orderlist){
 	cout<<"--------------------"<<endl;
 }
 
+void orderDomain::sidesLinker(Linker& link, const order& ord, const Sides& side){
+	
+

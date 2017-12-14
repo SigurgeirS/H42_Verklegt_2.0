@@ -8,7 +8,7 @@ using namespace std;
 
 class order{
 	private:
-		string ID;
+		int ID;
 		string name;
 		string delivery;
 		string status;
@@ -17,7 +17,7 @@ class order{
 	public:
 		bool verbose;
 		order();
-		string getID();
+		int getID();
 		string getName();
 		string getDelivery();
 		string getStatus();

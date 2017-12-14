@@ -15,15 +15,3 @@ vector<Linker> LinkerDomain::getLinker(){
 	return links;
 }
 
-int main(){
-	LinkerDomain dom;
-	vector<Linker> links;
-	Linker link;
-	cin>>link;
-
-	dom.addLinker(link);
-	links = dom.getLinker();
-
-	cout<<links[0]<<endl;
-	return 0;
-}

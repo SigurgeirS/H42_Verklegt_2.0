@@ -4,7 +4,7 @@ Sides::Sides(){
 	verbose = true;
 }
 
-string Sides::getID(){
+int Sides::getID(){
 	return ID;
 }
 

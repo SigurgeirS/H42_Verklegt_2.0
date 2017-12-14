@@ -7,13 +7,13 @@ using namespace std;
 
 class Sides{
 	private:
-		string ID;
+		int ID;
 		string name;
 		double price;
 	public:
 		Sides();
 		bool verbose;
-		string getID();
+		int getID();
 		string getName();
 		double getPrice();
 

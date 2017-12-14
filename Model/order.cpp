@@ -5,7 +5,7 @@ order::order(){
 
 };
 
-string order::getID(){
+int order::getID(){
 	return ID;
 };
 
