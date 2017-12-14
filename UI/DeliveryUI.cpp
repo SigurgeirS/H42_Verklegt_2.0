@@ -11,15 +11,13 @@
 void DeliveryUI::SelectLocation(){
     cout << "Please select pickup location" << endl;
     //Get location func
+    mainMenu();
 }
 void DeliveryUI::mainMenu(){
     
 }
 
 void DeliveryUI::mainMenu(){
-	cout << "Please select pickup location" << endl;
-	
-	domain.get_location();
 	cout << "Press (1): For order list" << endl;
 	cout << "Press (2): For ready orders" << endl;
 	cout << "Press (3): To get specific order" << endl;
