@@ -19,3 +19,4 @@ vector<Location> LocationDomain::getLocation(){
 	}
 	return locations;
 }
+
