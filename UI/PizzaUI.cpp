@@ -221,13 +221,13 @@ void PizzaUI::startUI()
 
     int selection = 0;
         system("CLS");
-        cout << "1. Record sizes" << endl;
-        cout << "2. Record toppings" << endl;
-        cout << "3. Record base" << endl;
-        cout << "4. Record menu" << endl;
-        cout << "5. Record other products" << endl;
-        cout << "6. Record locations" << endl;
-        cout << "7. Back to menu" << endl;
+    cout << "Press (1): To record sizes" << endl;
+    cout << "Press (2): To record toppings" << endl;
+    cout << "Press (3): To record base" << endl;
+    cout << "Press (4): To record menu" << endl;
+    cout << "Press (5): To record other products" << endl;
+    cout << "Press (6): To record locations" << endl;
+    cout << "Press (7): To go back to menu" << endl;
 
         cin >> selection;
 

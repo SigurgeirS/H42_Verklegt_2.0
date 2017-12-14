@@ -15,6 +15,7 @@ using namespace std;
 #include <stdio.h>
 class DeliveryUI {
 public:
+    void SelectLocation()
 	void mainMenu();
 	void validate_input(char input);
 	

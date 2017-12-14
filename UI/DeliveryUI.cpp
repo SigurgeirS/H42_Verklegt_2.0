@@ -8,15 +8,23 @@
 
 #include "DeliveryUI.hpp"
 
+void DeliveryUI::SelectLocation(){
+    cout << "Please select pickup location" << endl;
+    //Get location func
+}
+void DeliveryUI::mainMenu(){
+    
+}
+
 void DeliveryUI::mainMenu(){
 	cout << "Please select pickup location" << endl;
 	
 	domain.get_location();
-	cout << "Press 1: For order list" << endl;
-	cout << "Press 2: For ready orders" << endl;
-	cout << "Press 3: To get specific order" << endl;
-	cout << "Press 4: To mark order as paid" << endl;
-	cout << "Press 5: To mark order as delivered" << endl;
+	cout << "Press (1): For order list" << endl;
+	cout << "Press (2): For ready orders" << endl;
+	cout << "Press (3): To get specific order" << endl;
+	cout << "Press (4): To mark order as paid" << endl;
+	cout << "Press (5): To mark order as delivered" << endl;
 	char input;
 	cin >> input;
 	validate_input(input);

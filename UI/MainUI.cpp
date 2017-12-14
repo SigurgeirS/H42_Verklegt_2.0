@@ -17,6 +17,7 @@ void MainUI::startUI()
         cout << "s: Sales" << endl;
         cout << "b: Baking" << endl;
         cout << "d: Delivery" << endl;
+        cout << "q: Quit program" << endl;
         cin >> selection;
 
         switch(selection)
