@@ -16,8 +16,6 @@ class incID{
 		void resetOrderID();
 		//Sets ID to latest ID + one
 		void orderID(order& newOrder);
-	
-
 };
 
 #endif
