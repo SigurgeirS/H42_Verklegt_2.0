@@ -1,7 +1,7 @@
 #include "sides.h"
 
 Sides::Sides(){
-	//constructor
+	verbose = true;
 }
 
 string Sides::getID(){
@@ -17,18 +17,29 @@ double Sides::getPrice(){
 }
 
 ostream& operator << (ostream& out, const Sides& side){
-	out<<side.ID<<", "<<side.name<<", "<<side.price<<endl;
-
+	if(side.verbose == false){
+		out<<side.ID<<endl<<side.name<<endl<<side.price<<endl;
+	}
+	if(side.verbose){
+		out<<"ID: "<<side.ID<<endl<<"Name: "<<side.name<<endl<<"Price: "<<side.price<<endl;
+	}
 	return out;
 }
 
 istream& operator >> (istream& in, Sides& side){
-	cout<<"ID: ";
+	if(side.verbose){
+		cout<<"ID: ";
+	}
 	in>>side.ID;
-	cout<<"Name: ";
+	if(side.verbose){
+		cout<<"Name: ";
+	}
 	in>>side.name;
-	cout<<"Price: ";
+	if(side.verbose){
+		cout<<"Price: ";
+	}
 	in>>side.price;
 
 	return in;
 }
+

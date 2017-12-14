@@ -1,7 +1,7 @@
 #include "soda.h"
 
 Soda::soda(){
-	//constructor
+	verbose = true;
 }
 
 string Soda::getID(){
@@ -17,16 +17,27 @@ double Soda::getPrice(){
 }
 
 ostream& operator << (ostream& out, const Soda& soda){
-	out<<soda.ID<<", "<<soda.name<<", "<<soda.price<<endl;
+	if(soda.verbose){
+		out<<"ID: "<<soda.ID<<endl<<"Name: "<<soda.name<<endl<<"Price: "<<soda.price<<endl;
+	}
+	if(soda.verbose == false){
+		out<<soda.ID<<endl<<soda.name<<endl<<soda.price<<endl;
+	}
 	return out;
 }
 
 istream& operator >> (istream& in, Soda& soda){
-	cout<<"ID: ";
+	if(soda.verbose){
+		cout<<"ID: ";
+	}
 	in>>soda.ID;
-	cout<<"Name: ";
+	if(soda.verbose){
+		cout<<"Name: ";
+	}
 	in>>soda.name;
-	cout<<"Price: ";
+	if(soda.verbose){
+		cout<<"Price: ";
+	}
 	in>>soda.price;
 	return in;
 }
