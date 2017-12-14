@@ -8,13 +8,10 @@ using namespace std;
 
 class LinkerRepository {
 	private:
-		string fileName;
 	public:
 		LinkerRepository();
-		void setFileName(const string& file);
-		string getFileName();
-		void storeLinker(const Linker& link, string filename);
-		vector<Linker> fetchLinker();
+		void storeLinker(const Linker& link, string fileName);
+		vector<Linker> fetchLinker(string fileName);
 
 };
 

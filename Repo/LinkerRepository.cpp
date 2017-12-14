@@ -4,9 +4,9 @@ LinkerRepository::LinkerRepository(){
 	//constructor
 }
 
-void LinkerRepository::storeLinker(const Linker& link,filename.c_str()){
+void LinkerRepository::storeLinker(const Linker& link, string fileName){
 	ofstream fout;
-	fout.open(filename, ios::app);
+	fout.open(fileName.c_str(), ios::app);
 
 	if (fout.is_open()){
 		fout << link;
@@ -17,11 +17,11 @@ void LinkerRepository::storeLinker(const Linker& link,filename.c_str()){
 	}
 }
 
-vector<Linker> LinkerRepository::fetchLinker() {
+vector<Linker> LinkerRepository::fetchLinker(string fileName) {
 	ifstream fin;
 	vector<Linker> links;
 
-	fin.open("Linkerlist.txt");
+	fin.open(fileName.c_str());
 	if(fin.is_open()){
 		Linker link;
 		while(fin.good()){
@@ -34,5 +34,20 @@ vector<Linker> LinkerRepository::fetchLinker() {
 		cout<<"could not open file"<<endl;
 	}
 	return links;
+}
+
+int main(){
+	Linker link;
+	LinkerRepository repo;
+	vector<Linker> links;
+
+	cin>>link;
+	repo.storeLinker(link, "linkerlist.txt");
+	links = repo.fetchLinker("linkerlist.txt");
+
+	cout<<links[0]<<endl;
+
+
+	return 0;
 }
 
