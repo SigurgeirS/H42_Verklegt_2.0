@@ -1,7 +1,5 @@
 #ifndef PIZZA_H
 #define PIZZA_H
-
-#include "topping.h"
 #include <iostream>
 using namespace std;
 class Pizza

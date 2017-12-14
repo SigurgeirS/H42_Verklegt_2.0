@@ -1,4 +1,4 @@
-#include "sides.h"
+#include "Sides.h"
 
 Sides::Sides(){
 	verbose = true;
