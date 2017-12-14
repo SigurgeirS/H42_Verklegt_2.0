@@ -43,14 +43,23 @@ void OrderDomain::locationLinker(const Order& ord, const Location& location){
 	LinkRepo.storeLinker(link, "order_location.txt");
 }
 
-int main(){
-	OrderDomain dom;
-	Location location;
-	Order order;
+void OrderDomain::inputSodaLinker(int input, const Order& order){
+	Linker link;
+	cout<<"GERIST THETTA?!"<<endl;
+	vector<Soda> sodas;
+	sodas = SodaDom.getSoda();
 
-	cin>>order;
-	cin>>location;
-
-	dom.locationLinker(order, location);
-	return 0;
+	int c = 0;
+	int test;
+	cout<<sodas.size()<<endl;
+	while(c < sodas.size()){
+		test = sodas[c].getID();
+		cout<<test<<endl;
+		cout<<"GERIST THETTA?!"<<endl;
+		if(test == input){
+			sodaLinker(order, sodas[c]);
+			cout<<sodas[c]<<endl;
+		}
+		c++;
+	}
 }
