@@ -13,7 +13,7 @@ class LinkerRepository {
 		LinkerRepository();
 		void setFileName(const string& file);
 		string getFileName();
-		void storeLinker(const Linker& link);
+		void storeLinker(const Linker& link, string filename);
 		vector<Linker> fetchLinker();
 
 };

@@ -20,7 +20,7 @@ vector<Topping> ToppingDomain::getTopping(){
 	return toppings;
 }
 
-int main(){
+/*int main(){
 	vector<Topping> toppings;
 	Topping topping;
 	ToppingDomain dom;
@@ -30,4 +30,4 @@ int main(){
 	toppings = dom.getTopping();
 	cout<<toppings[0]<<endl;
 	return 0;
-}
+*/
