@@ -12,6 +12,7 @@ class Sides{
 		double price;
 	public:
 		Sides();
+		bool verbose;
 		string getID();
 		string getName();
 		double getPrice();

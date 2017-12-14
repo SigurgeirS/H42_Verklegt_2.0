@@ -11,6 +11,7 @@ class Soda {
 		string name;
 		double price;
 	public:
+		bool verbose;
 		soda();
 		string getID();
 		string getName();
