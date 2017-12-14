@@ -36,18 +36,3 @@ vector<Linker> LinkerRepository::fetchLinker(string fileName) {
 	return links;
 }
 
-int main(){
-	Linker link;
-	LinkerRepository repo;
-	vector<Linker> links;
-
-	cin>>link;
-	repo.storeLinker(link, "linkerlist.txt");
-	links = repo.fetchLinker("linkerlist.txt");
-
-	cout<<links[0]<<endl;
-
-
-	return 0;
-}
-

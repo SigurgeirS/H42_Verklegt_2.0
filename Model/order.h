@@ -17,12 +17,12 @@ class Order{
 	public:
 		bool verbose;
 		Order();
-		int getID();
+		int getID() const;
 		string getName();
 		string getDelivery();
 		string getStatus();
 		double getPrice();
-		void setID(string ID);
+		void setID(int ID);
 		
 		friend istream& operator >> (istream& in, Order& order);
 		friend ostream& operator << (ostream& out, const Order& order);

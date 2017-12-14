@@ -22,6 +22,21 @@ void OrderDomain::getOrderList(const vector<Order>& Orderlist){
 	cout<<"--------------------"<<endl;
 }
 
-void OrderDomain::sidesLinker(Linker& link, const Order& ord, const Sides& side){
-	
+void OrderDomain::sidesLinker(const Order& ord, const Sides& side){
+		Linker link;
+		link.setIDa(ord.getID());
+		link.setIDb(side.getID());
+		LinkRepo.storeLinker(link, "order_sides.txt");
+}
 
+int main(){
+	OrderDomain dom;
+	Sides side;
+	Order order;
+
+	cin>>order;
+	cin>>side;
+
+	dom.sidesLinker(order, side);
+	return 0;
+}

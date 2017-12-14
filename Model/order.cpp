@@ -5,7 +5,7 @@ Order::Order(){
 
 };
 
-int Order::getID(){
+int Order::getID() const{
 	return ID;
 };
 
@@ -21,7 +21,7 @@ double Order::getPrice(){
 	return price;
 };
 
-void Order::setID(string ID){
+void Order::setID(int ID){
 	this -> ID = ID;
 };
 

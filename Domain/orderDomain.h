@@ -10,14 +10,14 @@
 
 class OrderDomain{
 	private:
-		OrderRepository orderRepo;
+		OrderRepository OrderRepo;
 		LinkerRepository LinkRepo;
 
 	public:
 		OrderDomain();
 		void addOrder(const Order& newOrder);
 		void getOrderList(const vector<Order>& orderlist);
-		void sidesLinker(Linker& link, const order& ord, const Sides& side);
+		void sidesLinker(const Order& ord, const Sides& side);
 
 
 };

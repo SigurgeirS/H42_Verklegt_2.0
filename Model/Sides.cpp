@@ -4,7 +4,7 @@ Sides::Sides(){
 	verbose = true;
 }
 
-int Sides::getID(){
+int Sides::getID() const{
 	return ID;
 }
 

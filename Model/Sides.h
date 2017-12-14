@@ -13,7 +13,7 @@ class Sides{
 	public:
 		Sides();
 		bool verbose;
-		int getID();
+		int getID() const;
 		string getName();
 		double getPrice();
 
