@@ -8,8 +8,8 @@ class Location
 {
 public:
     Location();
-    int get_id();
-    string get_name();
+    int getID() const;
+    string getName();
     friend istream& operator >> (istream& in, Location& location);
     friend ostream& operator << (ostream& out, const Location& location);
     bool verbose;

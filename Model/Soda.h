@@ -13,12 +13,13 @@ class Soda {
 	public:
 		bool verbose;
 		Soda();
-		int getID();
+		int getID() const;
 		string getName();
 		double getPrice();
-
+		
 		friend ostream& operator << (ostream& out, const Soda& soda);
 		friend istream& operator >> (istream& in, Soda& soda);
 };
 
 #endif
+

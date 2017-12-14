@@ -1,10 +1,10 @@
-#include "Soda.h"
+#include "soda.h"
 
 Soda::Soda(){
 	verbose = true;
 }
 
-int Soda::getID(){
+int Soda::getID() const{
 	return ID;
 }
 
@@ -41,4 +41,5 @@ istream& operator >> (istream& in, Soda& soda){
 	in>>soda.price;
 	return in;
 }
+
 

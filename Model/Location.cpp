@@ -3,17 +3,16 @@
 using namespace std;
 Location::Location()
 {
-    this->ID = 0;
     this->name = "";
     this->verbose = true;
 }
 
-int Location::get_id()
+int Location::getID() const
 {
     return ID;
 }
 
-string Location::get_name()
+string Location::getName()
 {
     return name;
 }
@@ -43,3 +42,4 @@ ostream& operator << (ostream& out, const Location& location)
 
     return out;
 }
+
