@@ -7,7 +7,7 @@
 class LocationRepository
 {
 public:
-    locationRepository();
+    LocationRepository();
     void storeLocation(const Location& location);
     vector<Location> fetchLocation();
 private:

@@ -8,8 +8,8 @@ class OrderRepository
 {
 public:
 	OrderRepository();
-	void add(const order& newOrder);
-	vector<order> fetch();
+	void add(const Order& newOrder);
+	vector<Order> fetch();
 private:
 };
 

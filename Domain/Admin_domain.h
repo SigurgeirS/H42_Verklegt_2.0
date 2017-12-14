@@ -2,10 +2,12 @@
 #define ADMIN_DOMAIN_H
 #include "../Repo/PizzaRepository.h"
 #include "../Repo/Pizza_menuRepository.h"
-#include "../Repo/OtherproductsRepository.h"
 #include "../Model/Pizza_menu.h"
 #include "../Model/Location.h"
 #include "../Repo/LocationRepository.h"
+#include "../Model/Base.h"
+#include "../Model/Pizza_size.h"
+#include "../Model/Topping.h"
 ///Include for toppings
 #include "../Exceptions/invalid_topping/InvalidToppingCount.h"
 #include "../Exceptions/invalid_topping/InvalidToppingName.h"
@@ -39,12 +41,6 @@ class Admin_domain
 {
 public:
     Admin_domain();
-    ///Recording things
-    void record_toppings(Topping& topping);
-    void record_base(Base& base);
-    void record_size(Pizza_size& pizzasize);
-    void record_menu(Pizza_menu& pizzamenu,string line);
-    void record_location(Location& location);
     ///Checking toppings
     void check_topping_count(int counter) throw (InvalidToppingCount);
     void check_topping_ID(Topping& topping);

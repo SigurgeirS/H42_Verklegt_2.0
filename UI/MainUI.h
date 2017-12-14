@@ -1,7 +1,7 @@
 #ifndef MAINUI_H
 #define MAINUI_H
 #include<iostream>
-#include "pizzaUI.h"
+#include "PizzaUI.h"
 
 class MainUI
 {

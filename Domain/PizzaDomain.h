@@ -12,11 +12,15 @@
 class PizzaDomain {
         private:
             PizzaRepository repo;
-            LinkerRepository linker_repo;
+            LinkerRepository Link_rep;
         public:
                 void addPizza(Pizza& pizza);
                 vector<Pizza> getPizza();
-                void Topping_Linker(Linker& linker);
+                void Topping_Linker_store(Linker& linker);
+                void Size_Linker_store(Linker& linker);
+                void Base_Linker_store(Linker& linker);
+                void MenuLinkerStore(Linker& linker);
+                vector<Linker> FindMenuLinker(Linker& linker);
 };
 
 #endif

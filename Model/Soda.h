@@ -12,11 +12,11 @@ class Soda {
 		double price;
 	public:
 		bool verbose;
-		soda();
+		Soda();
 		int getID();
 		string getName();
 		double getPrice();
-		
+
 		friend ostream& operator << (ostream& out, const Soda& soda);
 		friend istream& operator >> (istream& in, Soda& soda);
 };

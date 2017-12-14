@@ -1,6 +1,6 @@
 #include "ToppingDomain.h"
 
-ToppingDomain::toppingDomain(){
+ToppingDomain::ToppingDomain(){
 	//constructor
 }
 

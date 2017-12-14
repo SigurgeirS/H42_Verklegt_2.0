@@ -1,6 +1,6 @@
 #include "BaseDomain.h"
 
-BaseDomain::baseDomain(){
+BaseDomain::BaseDomain(){
 	//constructor
 }
 

@@ -8,10 +8,10 @@ class BaseDomain {
 	private:
 		BaseRepository repo;
 	public:
-		baseDomain();
+		BaseDomain();
 		void addBase(Base& base);
 		vector<Base> getBase();
-	
+
 };
 
 

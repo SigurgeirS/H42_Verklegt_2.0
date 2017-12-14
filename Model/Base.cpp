@@ -11,6 +11,10 @@ int Base::get_id(){
     return ID;
 }
 
+string Base::get_name(){
+       return name;
+}
+
 ostream& operator << (ostream& out, const Base& base){
 	if(base.verbose == false){
 		out << base.ID << endl << base.name << endl << base.price << endl;

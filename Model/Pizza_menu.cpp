@@ -1,6 +1,4 @@
 #include "Pizza_menu.h"
-#include "Topping.h"
-#include "../Model/Pizza_menu.h"
 using namespace std;
 
 Pizza_menu::Pizza_menu()
@@ -19,6 +17,10 @@ int Pizza_menu::get_id()
     return ID;
 }
 
+string Pizza_menu::get_name(){
+       return name;
+}
+
 istream& operator >> (istream& in, Pizza_menu& pizza_menu)
 {
     cout << "Type in a ID: " << endl;
@@ -30,7 +32,7 @@ istream& operator >> (istream& in, Pizza_menu& pizza_menu)
 
 ostream& operator << (ostream& out,const Pizza_menu& pizza_menu)
 {
-    Topping toppings;
-    out << pizza_menu.ID << "," << pizza_menu.name;
+    Pizza pizza;
+    out<<pizza_menu<<endl;
     return out;
 }

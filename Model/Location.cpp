@@ -3,7 +3,7 @@
 using namespace std;
 Location::Location()
 {
-    this->ID = "";
+    this->ID = 0;
     this->name = "";
     this->verbose = true;
 }

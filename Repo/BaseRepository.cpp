@@ -1,6 +1,6 @@
 #include "BaseRepository.h"
 
-BaseRepository::baseRepository(){
+BaseRepository::BaseRepository(){
 	//constructor
 }
 
@@ -9,7 +9,7 @@ void BaseRepository::fileBase(const Base& base){
 	fout.open("baselist.txt", ios::app);
 
 	if(fout.is_open()){
-		
+
 		fout << base;
 
 		fout.close();
@@ -41,4 +41,4 @@ vector<Base> BaseRepository::fetchBases(){
 	}
 	return bases;
 }
-	
+

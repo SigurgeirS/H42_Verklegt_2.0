@@ -12,6 +12,8 @@ class Linker {
 		Linker();
 		void setIDa(int ID);
 		void setIDb(int ID);
+		int getIDa();
+		int getIDb();
 		friend ostream& operator << (ostream& out, const Linker& link);
 		friend istream& operator >> (istream& in, Linker& link);
 };

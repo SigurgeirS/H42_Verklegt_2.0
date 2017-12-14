@@ -12,6 +12,14 @@ void Linker::setIDb(int ID){
 	IDb = ID;
 }
 
+int Linker::getIDa(){
+     return IDa;
+}
+
+int Linker::getIDb(){
+     return IDb;
+}
+
 ostream& operator << (ostream& out, const Linker& link){
 	out<<link.IDa<<endl<<link.IDb<<endl;
 	return out;
