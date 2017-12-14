@@ -12,7 +12,7 @@ class Soda {
 		double price;
 	public:
 		bool verbose;
-		soda();
+		Soda();
 		int getID() const;
 		string getName();
 		double getPrice();

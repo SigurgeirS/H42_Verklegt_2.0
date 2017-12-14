@@ -1,6 +1,6 @@
 #include "soda.h"
 
-Soda::soda(){
+Soda::Soda(){
 	verbose = true;
 }
 

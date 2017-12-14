@@ -7,7 +7,7 @@ class ToppingDomain {
 	private:
 		ToppingRepository repo;
 	public:
-		toppingDomain();
+		ToppingDomain();
 		void addTopping(Topping& topping);
 		vector<Topping> getTopping();
 };
