@@ -11,14 +11,9 @@
 #include <iostream>
 #include <stdio.h>
 #include "BaseDomain.h"
-#include "Base.h"
 #include "ToppingDomain.h"
-#include "Topping.h"
-#include "Location.h"
 #include "LocationDomain.h"
-#include "Soda.h"
 #include "SodaDomain.h"
-#include "Sides.h"
 #include "SidesDomain.h"
 
 using namespace std;

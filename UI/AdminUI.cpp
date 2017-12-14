@@ -30,9 +30,9 @@ void AdminUI::validateInput(char input){
         cin >> topping;
         toppingdom.addTopping(topping);
     }
-    /*else if(input == '3'){
+    else if(input == '3'){
         // add new menu item
-    }*/
+    }
     else if(input == '4'){
         //add new soda
         cin >> soda;
