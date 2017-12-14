@@ -13,7 +13,7 @@
 #include "DeliveryExceptions.hpp"
 using namespace std;
 
-class locationMenu{
+class LocationMenu{
 public:
 	void LocationUI();
 	void validateLocation(int input)throw(InvalidLocationException);

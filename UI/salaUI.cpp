@@ -1,10 +1,10 @@
 #include"salaUI.h"
 
-salaUI::salaUI(){
+SalaUI::SalaUI(){
 	//constructor
 }
 
-void salaUI::startUI(){
+void SalaUI::startUI(){
 	cout<<"Chose an option: "<<endl;
 	cout<<"(a) Create new order"<<endl;
 	cout<<"(b) Modify existing order"<<endl;

@@ -7,7 +7,7 @@
 class ToppingRepository{
 	private:
 	public:
-		toppingRepository();
+		ToppingRepository();
 		void storeTopping(const Topping& topping);
 		vector<Topping> fetchTopping();
 };

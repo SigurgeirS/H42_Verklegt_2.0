@@ -10,7 +10,7 @@ Pizza_menuRepository::~Pizza_menuRepository()
 }
 
 /*Writes a base to a file*/
-void Pizza_menuRepository::storemenu(string topping_id, const Pizza_menu pizzamenu)
+void Pizza_menuRepository::storemenu(int topping_id, const Pizza_menu pizzamenu)
 {
     ofstream fout;
     fout.open("pizza_menu.txt",ios::app);

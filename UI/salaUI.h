@@ -3,11 +3,11 @@
 #include"../Model/order.h"
 using namespace std;
 
-class salaUI{
+class SalaUI{
 	private:
 
 	public:
-		salaUI();
+		SalaUI();
 		void startUI();
 };
 #endif

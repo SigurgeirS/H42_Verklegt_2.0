@@ -1,6 +1,6 @@
 #include "ToppingRepository.h"
 
-ToppingRepository::toppingRepository(){
+ToppingRepository::ToppingRepository(){
 	//constructor
 }
 

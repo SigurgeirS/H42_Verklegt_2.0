@@ -7,7 +7,7 @@ class Pizza_menuRepository
 {
 public:
     Pizza_menuRepository();
-    void storemenu(string id, const Pizza_menu pizzamenu);
+    void storemenu(int id, const Pizza_menu pizzamenu);
     virtual ~Pizza_menuRepository();
 
 protected:

@@ -8,7 +8,7 @@
 
 #include "LocationMenu.hpp"
 
-void locationMenu::LocationUI(){
+void LocationMenu::LocationUI(){
 /*
 	cout << "Press 1: For Grafarvogur" << endl;
 	cout << "Press 2: For Hafnarfjorður" << endl;
@@ -20,7 +20,7 @@ void locationMenu::LocationUI(){
 	cin >> input;
 	validateLocation(input);
 }
-void locationMenu::validateLocation(int input)throw(InvalidLocationException){
+void LocationMenu::validateLocation(int input)throw(InvalidLocationException){
 	try
 	{	if(input <0 && input > 6)
 			{
