@@ -24,8 +24,4 @@ void Captain::startCaptainPepo(){
     cout <<CYAN<< "╚═╝     ╚══════╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝" << endl;
 }
 
-int main(){
-	Captain cap;
-	cap.startCaptainPepo();
-	return 0;
-}
+
