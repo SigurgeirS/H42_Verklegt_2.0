@@ -11,7 +11,7 @@
 void Captain::startCaptainPepo(){
     cout <<MAGENTA<<" ██████╗ █████╗ ██████╗ ████████╗ █████╗ ██╗███╗   ██╗" << endl;
     cout <<MAGENTA<<"██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██║████╗  ██║" << endl;
-    cout <<MAGENTA<<"██║     ███████║██████╔╝   ██║   ███████║██║██╔██╗ ██║"<<endl;
+    cout <<MAGENTA<<"██║     ███████║██████╔╝   ██║   ███████║██║██╔██╗ ██║" << endl;
     cout <<MAGENTA<<"██║     ██╔══██║██╔═══╝    ██║   ██╔══██║██║██║╚██╗██║" << endl;
     cout <<MAGENTA<<"╚██████╗██║  ██║██║        ██║   ██║  ██║██║██║ ╚████║" << endl;
     cout <<MAGENTA<<" ╚═════╝╚═╝  ╚═╝╚═╝        ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝" << endl << endl;
@@ -24,8 +24,4 @@ void Captain::startCaptainPepo(){
     cout <<CYAN<< "╚═╝     ╚══════╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝" << endl;
 }
 
-int main(){
-	Captain cap;
-	cap.startCaptainPepo();
-	return 0;
-}
+

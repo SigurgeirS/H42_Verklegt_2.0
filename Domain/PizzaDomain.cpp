@@ -37,12 +37,18 @@ vector<Linker> PizzaDomain::FindMenuLinker(Pizza& pizza, int ID){
      }
 return found_links;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> df6a06df835a90f5d54d063763ede3a54d88ee28
 void PizzaDomain::addPizza(Pizza& pizza){
+    //this function add pizza to repository
         pizza.verbose = false;
         repo.storePizza(pizza);
 }
 
 vector<Pizza> PizzaDomain::getPizza(){
+    // this function gets specific pizza
         int c = 0;
         vector<Pizza> pizzas;
         pizzas = repo.fetchPizzas();
@@ -53,6 +59,7 @@ vector<Pizza> PizzaDomain::getPizza(){
         return pizzas;
 }
 
+<<<<<<< HEAD
 int main(){
 #include "./PizzaDomain.h"
 #include "../Model/Pizza.h"
@@ -69,3 +76,5 @@ for(int i = 0; i < test.size(); i++){
 }
 return 0;
 }
+=======
+>>>>>>> df6a06df835a90f5d54d063763ede3a54d88ee28

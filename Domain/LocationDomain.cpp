@@ -5,11 +5,13 @@ LocationDomain::LocationDomain(){
 }
 
 void LocationDomain::addLocation(Location& location){
+    //this function adds a new location
 	location.verbose = false;
 	repo.storeLocation(location);
 }
 
 vector<Location> LocationDomain::getLocation(){
+    //this function gets the location
 	int c = 0;
 	vector<Location> locations;
 	locations = repo.fetchLocation();

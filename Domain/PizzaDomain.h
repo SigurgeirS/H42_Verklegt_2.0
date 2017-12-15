@@ -13,6 +13,7 @@ class PizzaDomain {
         private:
             PizzaRepository repo;
             LinkerRepository Link_rep;
+            Pizza pizza;
         public:
                 void addPizza(Pizza& pizza);
                 vector<Pizza> getPizza();
@@ -20,7 +21,7 @@ class PizzaDomain {
                 void Size_Linker_store(Linker& linker);
                 void Base_Linker_store(Linker& linker);
                 void MenuLinkerStore(Linker& linker);
-                vector<Linker> FindMenuLinker(Linker& linker);
+                vector<Linker> FindMenuLinker(Pizza& pizza, int ID);
 };
 
 #endif

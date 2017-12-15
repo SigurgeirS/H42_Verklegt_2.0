@@ -31,6 +31,10 @@ class OrderDomain{
 		void inputSodaLinker(int input, const Order& order);
 		void inputSidesLinker(int input, const Order& order);
 		void inputLocationLinker(int input, const Order& order);
+		void SetPrice(Order& order);
+		double TotalSodaPrice(Order& order);
+	//	double TotalPizzaPrice(Order& order);
+		double TotalSidesPrice(Order& order);
 
 };
 

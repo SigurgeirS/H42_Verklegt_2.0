@@ -16,6 +16,8 @@ void DeliveryUI::SelectLocation(){
     StartUI();
 }
 void DeliveryUI::StartUI(){
+    char input = '\0';
+    while(input != 'q'){
     cout << "Press (1): For order list" << endl;
     cout << "Press (2): For ready orders" << endl;
     cout << "Press (3): To get specific order" << endl;
@@ -24,6 +26,7 @@ void DeliveryUI::StartUI(){
     char input;
     cin >> input;
     validate_input(input);
+    }
 }
 
 void DeliveryUI::validate_input(char input){

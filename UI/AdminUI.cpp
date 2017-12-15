@@ -8,15 +8,19 @@
 
 #include "AdminUI.hpp"
 void AdminUI::mainUI(){
+    char input = '\0';
+    while(input != 'q'){
     cout << "Press (1): To add different base sizes " << endl;
     cout << "Press (2): To add new toppings" << endl;
     cout << "Press (3): To add new menu item" << endl;
     cout << "Press (4): To add soda" << endl;
     cout << "Press (5): To add sides" << endl;
     cout << "Press (6): To add locations" << endl;
-    char input = '\0';
+    cout << "Press (7): To add user" << endl;
+    cout << "Press (q): To quit to main menu" << endl;
     cin >> input;
     validateInput(input);
+    }
 }
 
 void AdminUI::validateInput(char input){
@@ -37,16 +41,19 @@ void AdminUI::validateInput(char input){
         //add new soda
         cin >> soda;
         sodadom.addSoda(soda);
-        
     }
     else if(input == '5'){
         //add new sides
         cin >> sides;
         sidesdom.addSides(sides);
     }
-    else if(input == '7'){
+    else if(input == '6'){
         // add new location
         cin >> location;
         locationdom.addLocation(location);
+    }
+    else if (input == '7'){
+        //add user ef við viljum hafa það
+        
     }
 }
