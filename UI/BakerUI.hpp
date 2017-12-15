@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <iostream>
+#include "../Domain/orderDomain.h"
 using namespace std;
 class BakerUI{
 public:
@@ -18,6 +19,10 @@ public:
     void pickLocation();
     void uniquePizzaORPizzaList();
     void ChangeStatus();
+private:
+    OrderDomain orderDom;
+    OrderDomain orders;
+    Order order;
 };
 
 #endif /* BakerUI_hpp */

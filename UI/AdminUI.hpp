@@ -15,6 +15,7 @@
 #include "LocationDomain.h"
 #include "SodaDomain.h"
 #include "SidesDomain.h"
+#include "Pizza_menuDomain.h"
 
 using namespace std;
 
@@ -33,6 +34,8 @@ private:
     SidesDomain sidesdom;
     Soda soda;
     SodaDomain sodadom;
+    Pizza_menuDomain menudom;
+    Pizza_menu menu;
     
 };
 

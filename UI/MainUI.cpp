@@ -32,22 +32,22 @@ void MainUI::startUI()
 
         case 's':
         {
-            /*SalesUI salesui;
-            salesui.startUI();*/
+            SalesUI salesui;
+            salesui.startUI();
             cout << endl;
         }
         break;
         case 'b':
         {
-            /*BakingUI bakingui;
-            bakingui.startUI();*/
+            BakerUI bakerui;
+            bakerui.startUI();
             cout << endl;
         }
         break;
         case 'd':
         {
-            /*DeliveryUI deliveryui;
-            deliveryui.startUI();*/
+            DeliveryUI deliveryui;
+            deliveryui.startUI();
             cout << endl;
         }
         break;
