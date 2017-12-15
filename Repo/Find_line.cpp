@@ -14,16 +14,16 @@ Find_line::~Find_line()
 ///Returns each line in a vector
 vector<string> Find_line::retrive_all_items(string file)
 {
-    vector<string> toppings;
+    vector<string> lines;
     ifstream fin;
     string line = "";
-    fin.open(file);
+//    fin.open(file);
 
-    while(fin >> line)
-    {
-        getline(fin,line);
-        toppings.push_back(line);
-    }
-    fin.close();
-    return toppings;
+  //  while(fin >> line)
+    //{
+      //  getline(fin,line);
+       // lines.push_back(line);
+    //}
+    //fin.close();
+    return lines;
 }

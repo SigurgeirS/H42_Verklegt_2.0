@@ -10,7 +10,8 @@ class Base
         Base();
         friend ostream& operator << (ostream& out, const Base& base);
         friend istream& operator >>(istream& in, Base& base);
-        string get_id();
+        int get_id();
+        string get_name();
 	bool verbose;
 
     protected:

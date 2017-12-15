@@ -42,3 +42,4 @@ ostream& operator << (ostream& out, const Location& location)
 
     return out;
 }
+

@@ -6,15 +6,15 @@
 //  Copyright © 2017 Halldór Alvar Kjartansson. All rights reserved.
 //
 
-#ifndef SidesRepo_hpp
-#define SidesRepo_hpp
+#ifndef SidesRepo_h
+#define SidesRepo_h
 #include <stdio.h>
 #include <fstream>
-#include "SidesDomain.hpp"
+#include "SidesDomain.h"
 #include "Sides.h"
 
 class SidesRepository {
-    
+
 public:
     SidesRepository();
     void storeSides(const Sides& sides);

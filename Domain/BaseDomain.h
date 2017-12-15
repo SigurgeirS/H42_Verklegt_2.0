@@ -11,7 +11,7 @@ class BaseDomain {
 		BaseDomain();
 		void addBase(Base& base);
 		vector<Base> getBase();
-	
+
 };
 
 

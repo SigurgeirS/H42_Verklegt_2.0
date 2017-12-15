@@ -5,6 +5,7 @@ OrderDomain::OrderDomain(){
 }
 
 void OrderDomain::addOrder(const Order& newOrder){
+    //adds new order
 	OrderRepo.add(newOrder);
 };
 
@@ -23,6 +24,7 @@ void OrderDomain::getOrderList(const vector<Order>& Orderlist){
 }
 
 void OrderDomain::sidesLinker(const Order& ord, const Sides& side){
+    // this function links side ID and order together
 		Linker link;
 		link.setIDa(ord.getID());
 		link.setIDb(side.getID());
@@ -30,6 +32,7 @@ void OrderDomain::sidesLinker(const Order& ord, const Sides& side){
 }
 
 void OrderDomain::sodaLinker(const Order& ord, const Soda& soda){
+    //this function adds soda ID to the order
 	Linker link;
 	link.setIDa(ord.getID());
 	link.setIDb(soda.getID());
@@ -37,6 +40,7 @@ void OrderDomain::sodaLinker(const Order& ord, const Soda& soda){
 }
 
 void OrderDomain::locationLinker(const Order& ord, const Location& location){
+    //this links the location and order together
 	Linker link;
 	link.setIDa(ord.getID());
 	link.setIDb(location.getID());
@@ -44,6 +48,7 @@ void OrderDomain::locationLinker(const Order& ord, const Location& location){
 }
 
 void OrderDomain::inputSodaLinker(int input, const Order& order){
+    //gets specific id for soda and adds to the order
 	vector<Soda> sodas;
 	sodas = SodaDom.getSoda();
 
@@ -59,6 +64,7 @@ void OrderDomain::inputSodaLinker(int input, const Order& order){
 }
 
 void OrderDomain::inputSidesLinker(int input, const Order& order){
+    //gets specific id for sides and adds to the order
 	vector<Sides> sidelist;
 	sidelist = SidesDom.getSides();
 
@@ -74,6 +80,7 @@ void OrderDomain::inputSidesLinker(int input, const Order& order){
 }
 
 void OrderDomain::inputLocationLinker(int input, const Order& order){
+    //gets a specific id for location and links it to the order
 	vector<Location> locations;
 	locations = LocationDom.getLocation();
 

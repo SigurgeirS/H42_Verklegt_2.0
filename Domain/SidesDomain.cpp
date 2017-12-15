@@ -9,6 +9,7 @@ void SidesDomain::addSides(Sides& side){
 }
 
 vector<Sides> SidesDomain::getSides(){
+    //this function gets the specific sides
 	int c = 0;
 	vector<Sides> sidelist;
 	sidelist = repo.fetchSides();

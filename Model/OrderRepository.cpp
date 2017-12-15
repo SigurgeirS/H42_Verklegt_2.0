@@ -4,7 +4,7 @@ OrderRepository::OrderRepository(){
 	//constructor
 }
 
-void OrderRepository::add(const order& newOrder){
+void OrderRepository::add(const Order& newOrder){
 	ofstream fout;
 	fout.open("orderlist.txt", ios::app);
 
@@ -17,13 +17,13 @@ void OrderRepository::add(const order& newOrder){
 	}
 }
 
-vector<order> OrderRepository::fetch() {
+vector<Order> OrderRepository::fetch() {
 	ifstream fin;
-	vector<order> orders;
+	vector<Order> orders;
 
 	fin.open("orderlist.txt");
 	if(fin.is_open()){
-		order forder;
+		Order forder;
 		forder.verbose = false;
 
 		while(fin.good()){
