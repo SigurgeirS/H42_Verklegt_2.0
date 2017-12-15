@@ -20,7 +20,6 @@ class PizzaDomain {
                 void Topping_Linker_store(Linker& linker);
                 void Size_Linker_store(Linker& linker);
                 void Base_Linker_store(Linker& linker);
-                void MenuLinkerStore(Linker& linker);
                 vector<Linker> FindMenuLinker(Pizza& pizza, int ID);
 };
 

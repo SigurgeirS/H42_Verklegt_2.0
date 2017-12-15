@@ -18,10 +18,6 @@ void PizzaDomain::Base_Linker_store(Linker& linker){
      Link_rep.storeLinker(linker,baselinkerfilename.c_str());
 }
 
-void PizzaDomain::MenuLinkerStore(Linker& linker){
-     Link_rep.storeLinker(linker,menulinkerfilename.c_str());
-}
-
 vector<Linker> PizzaDomain::FindMenuLinker(Pizza& pizza, int ID){
      vector<Linker> links = Link_rep.fetchLinker(menulinkerfilename.c_str());
      vector<Linker> found_links;
@@ -30,17 +26,13 @@ vector<Linker> PizzaDomain::FindMenuLinker(Pizza& pizza, int ID){
               found_links.push_back(links[i]);
          }
      }
-//found_links.pop_back();
-
      for(int i = 0; i < found_links.size(); i++){
          found_links[i].setIDa(pizza.getID());
      }
-return found_links;
-}
-<<<<<<< HEAD
-=======
 
->>>>>>> df6a06df835a90f5d54d063763ede3a54d88ee28
+     return found_links;
+}
+
 void PizzaDomain::addPizza(Pizza& pizza){
     //this function add pizza to repository
         pizza.verbose = false;
@@ -59,22 +51,3 @@ vector<Pizza> PizzaDomain::getPizza(){
         return pizzas;
 }
 
-<<<<<<< HEAD
-int main(){
-#include "./PizzaDomain.h"
-#include "../Model/Pizza.h"
-#include "../Model/Linker.h"
-PizzaDomain pizzadomain;
-Pizza pizza;
-Linker linker;
-cin >> pizza;
-vector<Linker> test = pizzadomain.FindMenuLinker(pizza,1);
-
-for(int i = 0; i < test.size(); i++){
-    cout << "Results: " << endl;
-    cout << test[i].getIDa() << endl;
-}
-return 0;
-}
-=======
->>>>>>> df6a06df835a90f5d54d063763ede3a54d88ee28
