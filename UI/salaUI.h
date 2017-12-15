@@ -6,7 +6,7 @@ using namespace std;
 
 class SalaUI{
 	private:
-        MainUI start;
+    MainUI start;
 
 	public:
 		SalaUI();

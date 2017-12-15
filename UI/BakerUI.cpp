@@ -20,9 +20,8 @@ void BakerUI::uniquePizzaORPizzaList(){
     char input;
     cin >> input;
     if(input == 'a'){
-        
         //get list of ordered pizza
-
+        orderDom.getOrderList(const vector<orders> orderlist);
     }
     else if (input == 'b'){
         

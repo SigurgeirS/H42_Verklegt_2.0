@@ -23,6 +23,7 @@ void SalaUI::startUI(){
 	}else if(option == 'b'){
 		cout<<"Specify what order you want to modify"<<endl;
 		//call domain class for modifying order
+        
 	}
     else if(option == 'c'){
         cout<<"Specify what order you want to get total value for"<<endl;
