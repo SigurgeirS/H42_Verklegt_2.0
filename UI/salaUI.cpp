@@ -31,14 +31,29 @@ void SalaUI::startUI(){
          get total value of order*/
     }
     else if(option == 'd'){
-        cout<<"Specify what order you want to modify"<<endl;
         /* Skrá sent eða sótt
          pickup or delivery*/
+        cout<<"Specify what order you want to modify"<<endl;
+        
+        cout<<"Press (a): To set order status to pick-up"<< endl;
+        cout <<"Press (b): To set order status to delivery"<< endl;
+        char input = '\0';
+        cin >> input;
+        if(input == 'a'){
+            order.setStatus("Pick-up");
+            cout << "Order status set to Pick-up" << endl;
+        }
+        else if (input == 'b'){
+           order.setStatus("Delivery");
+            cout << "Order status set to delivery"<<endl;
+        }
+        
     }
     else if(option == 'e'){
         cout<<"Specify what order you want to modify"<<endl;
         /* Merkja pöntun greidda
          set order paid*/
+        order.setStatus("Paid");
     }
     else if(option == 'f'){
         cout<<"Specify what order you want to modify"<<endl;

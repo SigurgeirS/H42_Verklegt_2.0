@@ -22,6 +22,7 @@ public:
 private:
     OrderDomain orderDom;
     OrderDomain orders;
+    Order order;
 };
 
 #endif /* BakerUI_hpp */

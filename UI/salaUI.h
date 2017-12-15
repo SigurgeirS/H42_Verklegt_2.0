@@ -7,6 +7,7 @@ using namespace std;
 class SalaUI{
 	private:
     MainUI start;
+    Order order;
 
 	public:
 		SalaUI();

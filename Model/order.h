@@ -13,14 +13,18 @@ class Order{
 		string delivery;
 		string status;
 		double price;
+    
 		
 	public:
+        string comment = "";
+        void set_comment(string x);
 		bool verbose;
 		Order();
 		int getID() const;
 		string getName();
 		string getDelivery();
 		string getStatus();
+        string setStatus(string message);
 		double getPrice();
 		void setID(int ID);
 		

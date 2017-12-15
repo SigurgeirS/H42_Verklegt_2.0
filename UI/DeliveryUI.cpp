@@ -32,7 +32,8 @@ void DeliveryUI::StartUI(){
 void DeliveryUI::validate_input(char input){
     if(input == '1'){
         cout << " you pressed 1 " << endl;
-        //domain.print_pizzalist();
+        orderDom.getOrderList(const vector<Order> &orderlist);
+        
     }
     else if(input== '2'){
         cout << " you pressed 2 " << endl;
@@ -43,12 +44,12 @@ void DeliveryUI::validate_input(char input){
 //        domain.get_specific_order();
     }
     else if(input== '4'){
-        cout << " you pressed 4 " << endl;
-//        domain.paid();
+        order.setStatus("Paid");
+
     }
     else if(input== '5'){
-        cout << " you pressed 5 " << endl;
-//        domain.delivered();
+        order.setStatus("Delivered");
+
     }
 }
 

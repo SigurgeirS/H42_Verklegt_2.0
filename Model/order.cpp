@@ -1,8 +1,7 @@
 #include "order.h"
 
 Order::Order(){
-	//constructor
-
+    //constructor
 };
 
 int Order::getID() const{
@@ -16,6 +15,9 @@ string Order::getName(){
 string Order::getStatus(){
 	return status;
 };
+string Order::setStatus(string message){
+    status = message;
+}
 
 double Order::getPrice(){
 	return price;

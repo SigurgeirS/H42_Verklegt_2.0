@@ -35,11 +35,11 @@ void BakerUI::ChangeStatus(){
     char input;
     cin >> input;
     if(input == 'a'){
-        
         //set order to 'in progress'
+        order.setStatus("in progress");
     }
     else if (input == 'b'){
-        
         //Set order to 'Ready'
+        order.setStatus("Ready");
     }
 }

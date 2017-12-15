@@ -10,6 +10,7 @@
 #define UI_hpp
 #include <iostream>
 #include "Deliverydomain.h"
+#include "orderDomain.h"
 using namespace std;
 
 #include <stdio.h>
@@ -21,6 +22,8 @@ public:
     void StartUI();
     
 private:
+    OrderDomain orderDom;
+    Order order;
     Domain domain;
 };
 
