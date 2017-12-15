@@ -6,7 +6,7 @@
 //  Copyright © 2017 Halldór Alvar Kjartansson. All rights reserved.
 //
 
-#include "AdminUI.hpp"
+#include "AdminUI.h"
 void AdminUI::mainUI(){
     char input = '\0';
     while(input != 'q'){

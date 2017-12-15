@@ -15,12 +15,13 @@
 #include "LocationDomain.h"
 #include "SodaDomain.h"
 #include "SidesDomain.h"
-#include "Pizza_menuDomain.h"
+//#include "Pizza_menuDomain.h"
 
 using namespace std;
 
 class AdminUI{
 public:
+    AdminUI();
     void mainUI();
     void validateInput(char input);
 private:
@@ -34,8 +35,8 @@ private:
     SidesDomain sidesdom;
     Soda soda;
     SodaDomain sodadom;
-    Pizza_menuDomain menudom;
-    Pizza_menu menu;
+//    Pizza_menuDomain menudom;
+//    Pizza_menu menu;
     
 };
 
