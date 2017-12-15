@@ -16,7 +16,6 @@ void AdminUI::mainUI(){
     cout << "Press (4): To add soda" << endl;
     cout << "Press (5): To add sides" << endl;
     cout << "Press (6): To add locations" << endl;
-    cout << "Press (7): To add user" << endl;
     cout << "Press (q): To quit to main menu" << endl;
     cin >> input;
     validateInput(input);
@@ -36,6 +35,8 @@ void AdminUI::validateInput(char input){
     }
     else if(input == '3'){
         // add new menu item
+        cin >>  menu;
+        menudom.addMenu(menu);
     }
     else if(input == '4'){
         //add new soda
@@ -52,8 +53,5 @@ void AdminUI::validateInput(char input){
         cin >> location;
         locationdom.addLocation(location);
     }
-    else if (input == '7'){
-        //add user ef við viljum hafa það
-        
-    }
+    
 }
