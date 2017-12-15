@@ -1,6 +1,6 @@
 #include "LocationRepository.h"
 
-LocationRepository::locationRepository(){
+LocationRepository::LocationRepository(){
 	//constructor
 }
 

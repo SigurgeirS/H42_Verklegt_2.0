@@ -88,3 +88,95 @@ void OrderDomain::inputLocationLinker(int input, const Order& order){
 	}
 }
 
+double OrderDomain::TotalSodaPrice(Order& order){
+	double Total;
+	vector<Linker> links;
+	links = LinkRepo.fetchLinker("order_soda.txt");
+
+	int c = 0;
+	vector<int>IDs;
+
+	while(c < links.size()){
+		if(links[c].getIDa() == order.getID()){
+			IDs.push_back(links[c].getIDb());
+		}
+		c++;
+	}
+	SodaRepository SodaRep;
+	vector<Soda> sodas = SodaRep.fetchSoda();
+
+	c = 0;
+
+	while(c < sodas.size()){
+		for(int i = 0; i < IDs.size(); i++){
+			if(sodas[c].getID() == IDs[i]){
+				Total += sodas[c].getPrice();
+			}
+		}
+		c++;
+	}
+	return Total;
+}
+/*
+double OrderDomain::TotalPizzaPrice(Order& order){
+	double Total;
+	vector<Linker> links;
+	links = LinkRepo.fetchLinker("order_pizza.txt");
+
+	int c = 0;
+	vector<int>IDs;
+
+	while(c < links.size()){
+		if(links[c].getIDa() == order.getID()){
+			IDs.push_back(links[c].getIDb());
+		}
+		c++;
+	}
+	PizzaRepository PizzaRep;
+	vector<Pizza> pizzas = PizzaRep.fetchPizza();
+
+	c = 0;
+
+	while(c < pizzas.size()){
+		for(int i = 0; i < IDs.size(); i++){
+			if(pizzas[c].getID() == IDs[i]){
+				Total += pizzas[c].getPrice();
+			}
+		}
+		c++;
+	}
+	return Total;
+}
+*/
+double OrderDomain::TotalSidesPrice(Order& order){
+	double Total;
+	vector<Linker> links;
+	links = LinkRepo.fetchLinker("order_sides.txt");
+
+	int c = 0;
+	vector<int>IDs;
+
+	while(c < links.size()){
+		if(links[c].getIDa() == order.getID()){
+			IDs.push_back(links[c].getIDb());
+		}
+		c++;
+	}
+	SidesRepository SidesRep;
+	vector<Sides> sidelist = SidesRep.fetchSides();
+
+	c = 0;
+
+	while(c < sidelist.size()){
+		for(int i = 0; i < IDs.size(); i++){
+			if(sidelist[c].getID() == IDs[i]){
+				Total += sidelist[c].getPrice();
+			}
+		}
+		c++;
+	}
+	return Total;
+}
+
+void OrderDomain::SetPrice(Order& order){
+}
