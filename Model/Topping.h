@@ -9,7 +9,7 @@ public:
     Topping();
     friend ostream& operator << (ostream& out, const Topping& topping);
     friend istream& operator >>(istream& in, Topping& topping);
-    int get_id();
+    int get_id() const;
     string get_name();
     double get_price();
     bool verbose;

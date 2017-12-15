@@ -11,7 +11,7 @@ Topping::Topping()
     this->verbose = true;
 }
 
-int Topping::get_id()
+int Topping::get_id() const
 {
     return ID;
 }

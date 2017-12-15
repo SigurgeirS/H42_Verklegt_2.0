@@ -4,7 +4,7 @@ const string toppinglinkerfilename = "toppinglinker.txt";
 const string sizelinkerfilename = "sizelinker.txt";
 const string baselinkerfilename = "baselinker.txt";
 const string orderlinkerfilename = "orderlinker.txt";
-const string menulinkerfilename = "menulinker.txt";
+const string menulinkerfilename = "menu_topping.txt";
 
 void PizzaDomain::Topping_Linker_store(Linker& linker){
       Link_rep.storeLinker(linker,toppinglinkerfilename.c_str());
@@ -18,7 +18,7 @@ void PizzaDomain::Base_Linker_store(Linker& linker){
      Link_rep.storeLinker(linker,baselinkerfilename.c_str());
 }
 
-vector<Linker> PizzaDomain::FindMenuLinker(Pizza& pizza, int ID){
+void PizzaDomain::FindMenuLinker(Pizza& pizza, int ID){
      vector<Linker> links = Link_rep.fetchLinker(menulinkerfilename.c_str());
      vector<Linker> found_links;
       for(int i = 0; i < links.size(); i++){
@@ -28,9 +28,8 @@ vector<Linker> PizzaDomain::FindMenuLinker(Pizza& pizza, int ID){
      }
      for(int i = 0; i < found_links.size(); i++){
          found_links[i].setIDa(pizza.getID());
+	 Link_rep.storeLinker(found_links[i], toppinglinkerfilename.c_str()); 
      }
-
-     return found_links;
 }
 
 void PizzaDomain::addPizza(Pizza& pizza){
@@ -50,4 +49,23 @@ vector<Pizza> PizzaDomain::getPizza(){
         }
         return pizzas;
 }
+#include"../Domain/Pizza_menu_domain.h"
+#include"../Repo/Pizza_menu_repository.h"
 
+int main(){
+	/*Pizza_menu menu;
+	Pizza_menu_domain menuDom;
+
+	cin>>menu;
+	menuDom.addMenu(menu);
+	*/
+	Pizza pizza;
+	cin>>pizza;
+
+	PizzaDomain pizzaDom;
+	int menuID = 3;
+
+	pizzaDom.FindMenuLinker(pizza, menuID);
+
+	return 0;
+}
